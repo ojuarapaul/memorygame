@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Memory Game</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- here goes the link to load Bootstrap 5 CSS --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- here goes the links to load Google Fonts (the example is for Josefin)--->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@600&family=Quicksand:wght@400&display=swap"
+        rel="stylesheet">
+
+    <!--My Style Information File (CSS)-->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <!---Optional JavaScript-->
+
+    <!-- here goes the script to load JQuery than Bootstrap 5 JavaScript Bundle with Popper-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/51558fce96.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    /* here goes the internal style information (CSS) for the document*/
+</style>
+
+<body>
+    <!--Navbar-->
+
+    <div class="container">
+        <a href="game.html"><img class="my-pic shakeMe" src="images/brain.png" alt="The Memory Game"></a>
+        <h1>THE MEMORY GAME</h1>
+
+        <div class="btnGame">
+            <button id="btn2" type="button" class="btn btn-secondary btn-lg glow">Play</button>
+            <script>
+                //check if touchevent is available (to work with iPhone touchscreen)
+                let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+                //bind touch event to the button with id = btn2 and triggers 'call()' function
+                document.getElementById('btn2').addEventListener(touchEvent, call);
+                var callOne = true;
+                function call() {
+                    window.open("game.html", "_self");
+                }
+            </script>
+
+            <section id="footer">
+                <br>
+                <br>
+                <h4>&copy; Created by Ojuarapaul | 2022</h4>
+            </section>
+        </div>
+        <script src="js/myscript.js"></script>
+        <!--pay attention to the path! /js/myscript.js DOES NOT WORK ONLINE-->
+</body>
+
+</html>
