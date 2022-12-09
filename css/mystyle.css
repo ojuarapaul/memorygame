@@ -261,6 +261,15 @@ p {
     }
   }
 
+  /*tablets*/
+@media (min-width: 481px) and (max-width: 1024px) { 
+  .imgLogoGame {
+    padding-top:3rem;
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+}
+
 .imgGame {
   padding:0;
   width: 6rem;
@@ -272,6 +281,31 @@ p {
       width: 5rem;
     }
   }
+
+    /* When the browser is at least 360px and below */
+    @media (max-width: 361px) {
+      .imgGame {
+        padding:0;
+        width: 4rem;
+      }
+    }
+
+    /* When the browser is at least 280px and below (Galaxy fold */
+    @media (max-width: 281px) {
+      .imgGame {
+        padding:0;
+        width: 3rem;
+      }
+    }
+
+
+      /*tablets*/
+@media (min-width: 481px) and (max-width: 1024px) { 
+  .imgGame {
+    padding:0;
+    width: 8rem;
+  }
+}
 
 .my-pic {
   padding-top: 6rem;
