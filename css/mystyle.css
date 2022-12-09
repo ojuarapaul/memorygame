@@ -255,7 +255,7 @@ p {
   /* When the browser is at least 450px and below */
   @media (max-width: 480px) {
     .imgLogoGame {
-      padding:1rem;
+      padding:3rem;
       padding-bottom: 0.5rem;
       width: 80%;
     }
@@ -274,7 +274,7 @@ p {
   }
 
 .my-pic {
-  padding-top: 2rem;
+  padding-top: 6rem;
   width: 35%;
 }
   /* When the browser is at least 450px and below */
