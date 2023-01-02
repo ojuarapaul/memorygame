@@ -314,7 +314,7 @@ p {
   /* When the browser is at least 450px and below */
   @media (max-width: 480px) {
     .my-pic {
-      padding-top: 3rem;
+      padding-top: 8rem;
       width: 60%;
     }
   }
